@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Project Page for Identity, Expression, and Head Pose Reconstruction">
-    <meta name="keywords" content="Identity Reconstruction, Expression Reconstruction, Head Pose Estimation, EMOCA, ResNet, 6DRepNet, AI, Deep Learning">
-    <meta name="author" content="Your Name">
-    <title>Project: Identity, Expression, and Head Pose Reconstruction</title>
+    <meta name="description" content="Dynamic Head Reconstruction Project">
+    <meta name="keywords" content="3D Head Reconstruction, Identity, Expression, Head Pose, Deep Learning">
+    <meta name="author" content="Levon Avetisyan">
+    <title>Dynamic Head Reconstruction Project</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #343a40;
             color: white;
+            padding: 1em;
             text-align: center;
-            padding: 1em 0;
         }
+
         h1 {
             font-size: 2.5em;
             margin: 0;
         }
-        section {
-            max-width: 800px;
+
+        main {
+            max-width: 1000px;
             margin: 2em auto;
-            padding: 20px;
+            padding: 0 2em;
+        }
+
+        section {
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 1em;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+
+        h2 {
+            margin-top: 0;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
+
+        .center {
             text-align: center;
-            padding: 1em 0;
-            background-color: #4CAF50;
+        }
+
+        .btn-container {
+            margin-top: 1.5em;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #343a40;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 0.5em 1.5em;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 0.5em;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #55595c;
+        }
+
+        .abstract {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .video-embed {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5em 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #343a40;
+            color: white;
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Identity, Expression, and Head Pose Reconstruction</h1>
-        <p>Exploring the performance of deep learning models on identity, expression, and head pose estimation tasks.</p>
+        <h1>Reconstructing 3D Faces From 2D Inputs</h1>
     </header>
 
-    <section>
-        <h2>Overview</h2>
-        <p>This project explores the use of various deep learning models for identity, expression, and head pose reconstruction. Through experiments on models like EMOCA, ResNet, and 6DRepNet, we evaluate their performance under different configurations such as the use of augmentation, MSE loss, L1 loss, and Geodesic Distance loss.</p>
+    <main>
+        <section class="center">
+            <h2>Abstract</h2>
+            <p class="abstract">
+This thesis explores the reconstruction of identity, expression, and head pose from 2D images, utilizing advanced deep learning models. The primary objective is to disentangle facial identity and expression while estimating accurate head pose transformations. The research focuses on the Famudy dataset, which provides detailed annotations for facial identities, expressions based on the NPHM model, and head pose data.
+A range of pretrained convolutional neural networks were adapted for the expression and identity reconstruction tasks. Custom loss functions and data augmentation strategies were employed to enhance model performance and generalization, particularly considering dataset’s size limitations.
+The experiments demonstrate strong results for expression code reconstruction, though identity and head pose reconstruction remained challenging due to the limited number of unique identities in the dataset. 
+This thesis provides a detailed evaluation of the models used, outlining the strengths and limitations of each approach. The findings of this thesis, offer valuable insights into facial reconstruction and head pose estimation, which can become a base for future explorations and be applied in various fields.
 
-        <h2>Best Model Results</h2>
-        <ul>
-            <li><strong>Identity Reconstruction:</strong> EMOCA with MSE and augmentation (Cosine Similarity: 0.1422)</li>
-            <li><strong>Expression Reconstruction:</strong> EMOCA with MSE and augmentation (Cosine Similarity: 0.27)</li>
-            <li><strong>Head Pose Estimation:</strong> 6DRepNet with Geodesic Distance loss and no augmentation (MAEV: 0.83)</li>
-        </ul>
 
-        <h2>Challenges</h2>
-        <p>Identity reconstruction was hindered by the limited number of unique participants in the dataset, while head pose estimation faced challenges due to extreme head orientations and dataset imbalances. Future research should focus on better handling of these issues to improve model performance.</p>
+            </p>
+        </section>
 
-        <h2>Qualitative Results</h2>
-        <p>Check out the qualitative results <a href="#qualitative-results">here</a> for a visual comparison of model outputs.</p>
-    </section>
 
-    <footer>
-        <p>Project by <a href="https://github.com/YourGitHubUsername">Your Name</a></p>
-    </footer>
+        <section class="center">
+            <h2>Project Links</h2>
+            <div class="btn-container">
+                <a href="https://arxiv.org/abs/1234567" class="btn">Paper</a>
+                <a href="https://github.com/YourGitHubRepo" class="btn">Code</a>
+                <a href="https://your-project-video-link" class="btn">Video</a>
+            </div>
+        </section>
+
+
+    </main>
+
 
 </body>
+
 </html>
