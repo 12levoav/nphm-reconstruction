@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Page for Identity, Expression, and Head Pose Reconstruction">
+    <meta name="keywords" content="Identity Reconstruction, Expression Reconstruction, Head Pose Estimation, EMOCA, ResNet, 6DRepNet, AI, Deep Learning">
+    <meta name="author" content="Your Name">
+    <title>Project: Identity, Expression, and Head Pose Reconstruction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Identity, Expression, and Head Pose Reconstruction</h1>
+        <p>Exploring the performance of deep learning models on identity, expression, and head pose estimation tasks.</p>
+    </header>
+
+    <section>
+        <h2>Overview</h2>
+        <p>This project explores the use of various deep learning models for identity, expression, and head pose reconstruction. Through experiments on models like EMOCA, ResNet, and 6DRepNet, we evaluate their performance under different configurations such as the use of augmentation, MSE loss, L1 loss, and Geodesic Distance loss.</p>
+
+        <h2>Best Model Results</h2>
+        <ul>
+            <li><strong>Identity Reconstruction:</strong> EMOCA with MSE and augmentation (Cosine Similarity: 0.1422)</li>
+            <li><strong>Expression Reconstruction:</strong> EMOCA with MSE and augmentation (Cosine Similarity: 0.27)</li>
+            <li><strong>Head Pose Estimation:</strong> 6DRepNet with Geodesic Distance loss and no augmentation (MAEV: 0.83)</li>
+        </ul>
+
+        <h2>Challenges</h2>
+        <p>Identity reconstruction was hindered by the limited number of unique participants in the dataset, while head pose estimation faced challenges due to extreme head orientations and dataset imbalances. Future research should focus on better handling of these issues to improve model performance.</p>
+
+        <h2>Qualitative Results</h2>
+        <p>Check out the qualitative results <a href="#qualitative-results">here</a> for a visual comparison of model outputs.</p>
+    </section>
+
+    <footer>
+        <p>Project by <a href="https://github.com/YourGitHubUsername">Your Name</a></p>
+    </footer>
+
+</body>
+</html>
